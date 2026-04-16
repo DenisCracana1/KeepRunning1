@@ -28,7 +28,7 @@ public class ParallaxLayer : MonoBehaviour
         lastPlayerPos = player.position;
     }
 
-    void LateUpdate()
+   /* void LateUpdate()
     {
         Vector3 delta = player.position - lastPlayerPos;
 
@@ -43,7 +43,7 @@ public class ParallaxLayer : MonoBehaviour
             MoveRightToLeft();
 
         lastPlayerPos = player.position;
-    }
+    }*/
 
     void MoveLeftToRight()
     {

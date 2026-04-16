@@ -98,4 +98,9 @@ public class CameraController : MonoBehaviour
         Vector3 pos = transform.position;
         Gizmos.DrawWireCube(pos, new Vector3(deadzoneSize.x, deadzoneSize.y, 0.1f));
     }
+    // Método para que el LevelManager le asigne el nuevo jugador
+    public void SetTarget(PlayerController newPlayer)
+    {
+        player = newPlayer;
+    }
 }

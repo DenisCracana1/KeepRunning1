@@ -72,7 +72,7 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
-        rb = GetComponent<Rigidbody2D>();
+        if (rb == null) rb = GetComponent<Rigidbody2D>();
 
         stateMachine = new PlayerStateMachine();
         var factory = new PlayerStateFactory(this, stateMachine);
@@ -86,10 +86,14 @@ public class PlayerController : MonoBehaviour
         wallSlideState = factory.WallSlide();
         wallJumpState = factory.WallJump();
         climbState = factory.Climb();
-        anim = GetComponent<Animator>();
+        if (anim == null)
+        {
+            anim = GetComponentInChildren<Animator>();
+        }
 
         dashesLeft = maxDashes;
         currentStamina = maxStamina;
+
     }
 
     private void Start()
