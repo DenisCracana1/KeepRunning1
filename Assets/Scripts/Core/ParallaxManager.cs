@@ -1,75 +1,67 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class ParallaxLayer : MonoBehaviour
+public class ParallaxManager : MonoBehaviour
 {
-    public Transform player;
-    public float parallaxMultiplier = 0.5f;
+    Transform cam; //Main Camera
+    Vector3 camStartPos;
+    float distance; //jarak antara start camera posisi dan current posisi
 
-    private Transform leftPart;
-    private Transform rightPart;
+    GameObject[] backgrounds;
+    Material[] mat;
+    float[] backSpeed;
 
-    private float spriteWidth;
+    float farthestBack;
 
-    private Vector3 lastPlayerPos;
+    [Range(0.01f, 1f)]
+    public float parallaxSpeed;
 
+    // Start is called before the first frame update
     void Start()
     {
-        if (player == null)
-            player = GameObject.FindWithTag("Player").transform;
+        cam = Camera.main.transform;
+        camStartPos = cam.position;
 
-        // Los dos hijos
-        leftPart = transform.GetChild(0);
-        rightPart = transform.GetChild(1);
+        int backCount = transform.childCount;
+        mat = new Material[backCount];
+        backSpeed = new float[backCount];
+        backgrounds = new GameObject[backCount];
 
-        // Ancho del sprite
-        SpriteRenderer sr = leftPart.GetComponent<SpriteRenderer>();
-        spriteWidth = sr.bounds.size.x;
+        for (int i = 0; i < backCount; i++)
+        {
+            backgrounds[i] = transform.GetChild(i).gameObject;
+            mat[i] = backgrounds[i].GetComponent<Renderer>().material;
+        }
 
-        lastPlayerPos = player.position;
+        BackSpeedCalculate(backCount);
     }
 
-   /* void LateUpdate()
+    void BackSpeedCalculate(int backCount)
     {
-        Vector3 delta = player.position - lastPlayerPos;
+        for (int i = 0; i < backCount; i++) //find the farthest background
+        {
+            if ((backgrounds[i].transform.position.z - cam.position.z) > farthestBack)
+            {
+                farthestBack = backgrounds[i].transform.position.z - cam.position.z;
+            }
+        }
 
-        // Movimiento parallax
-        transform.position += new Vector3(delta.x * parallaxMultiplier, 0, 0);
-
-        // Loop infinito
-        if (player.position.x - leftPart.position.x > spriteWidth)
-            MoveLeftToRight();
-
-        if (rightPart.position.x - player.position.x > spriteWidth)
-            MoveRightToLeft();
-
-        lastPlayerPos = player.position;
-    }*/
-
-    void MoveLeftToRight()
-    {
-        leftPart.position = new Vector3(
-            rightPart.position.x + spriteWidth,
-            leftPart.position.y,
-            leftPart.position.z
-        );
-
-        // Intercambiar referencias
-        var temp = leftPart;
-        leftPart = rightPart;
-        rightPart = temp;
+        for (int i = 0; i < backCount; i++) //set the speed of bacground
+        {
+            backSpeed[i] = 1 - (backgrounds[i].transform.position.z - cam.position.z) / farthestBack;
+        }
     }
 
-    void MoveRightToLeft()
+    private void LateUpdate()
     {
-        rightPart.position = new Vector3(
-            leftPart.position.x - spriteWidth,
-            rightPart.position.y,
-            rightPart.position.z
-        );
+        distance = cam.position.x - camStartPos.x;
+        transform.position = new Vector3(cam.position.x - 1, transform.position.y, 10f);
 
-        // Intercambiar referencias
-        var temp = leftPart;
-        leftPart = rightPart;
-        rightPart = temp;
+        for (int i = 0; i < backgrounds.Length; i++)
+        {
+            float speed = backSpeed[i] * parallaxSpeed;
+            mat[i].SetTextureOffset("_MainTex", new Vector2(distance, 0) * speed);
+        }
     }
 }

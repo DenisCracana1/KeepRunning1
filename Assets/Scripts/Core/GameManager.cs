@@ -1,93 +1,232 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance;
+    private static GameManager _instance;
 
-    [Header("Referencias de Jugador")]
-    public Transform respawnPoint;
+    public static GameManager Instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                _instance = FindFirstObjectByType<GameManager>();
+
+                if (_instance == null)
+                {
+                    GameObject go = new GameObject("GameManager");
+                    _instance = go.AddComponent<GameManager>();
+                }
+            }
+
+            return _instance;
+        }
+    }
+
+    public GameObject playerPrefab;
     public PlayerController player;
+    public Transform respawnPoint;
 
-    [Header("Estado Global")]
+    public AudioClip respawnSound;
+
+    private AudioSource audioSource;
+
+    private TextMeshProUGUI timerText;
+    private TextMeshProUGUI deathText;
+
     public int deathCount;
+    public float timeElapsed;
 
     private void Awake()
     {
-        if (Instance == null)
+        if (_instance == null)
         {
-            Instance = this;
+            _instance = this;
             DontDestroyOnLoad(gameObject);
         }
-        else
+        else if (_instance != this)
         {
             Destroy(gameObject);
+            return;
+        }
+
+        audioSource = GetComponent<AudioSource>();
+
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
         }
     }
 
-    // --- LÓGICA DE MUERTE ---
-    public void PlayerDied()
+    private void OnEnable()
     {
-        if (LevelManager.Instance != null)
-        {
-            LevelManager.Instance.RegisterDeath();
-        }
-        RespawnPlayer();
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
-    public void RespawnPlayer()
+    private void OnDisable()
     {
-        if (player == null || respawnPoint == null) return;
-        player.transform.position = respawnPoint.position;
-        if (player.rb != null) player.rb.linearVelocity = Vector2.zero;
-
-        // Reset de mecánicas (ajusta según tu PlayerController)
-        player.dashesLeft = player.maxDashes;
-        player.currentStamina = player.maxStamina;
-
-        if (player.stateMachine != null)
-            player.stateMachine.ChangeState(player.idleState);
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
-    // --- LÓGICA DE NIVELES AUTOMÁTICA ---
-    public void NextLevel()
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // 1. Enviamos los datos del nivel actual a la nube antes de salir
-        if (LevelManager.Instance != null)
-        {
-            LevelManager.Instance.FinishLevel();
-        }
+        GameObject sp = GameObject.Find("SpawnPoint");
 
-        // 2. Calculamos el índice de la siguiente escena
-        int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
-
-        // 3. Comprobamos si existe una siguiente escena en el Build Settings
-        if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
+        if (sp != null)
         {
-            Debug.Log("Cargando siguiente nivel índice: " + nextSceneIndex);
-            SceneManager.LoadScene(nextSceneIndex);
+            respawnPoint = sp.transform;
         }
         else
         {
-            Debug.Log("¡Has llegado al final del juego! No hay más niveles en Build Settings.");
-            // Aquí podrías cargar una escena de "Créditos" o "Victoria"
+            Debug.LogError("No existe un objeto llamado SpawnPoint");
+        }
+
+        GameObject timerObj = GameObject.Find("TimerText");
+
+        if (timerObj != null)
+        {
+            timerText = timerObj.GetComponent<TextMeshProUGUI>();
+        }
+
+        GameObject deathObj = GameObject.Find("DeathText");
+
+        if (deathObj != null)
+        {
+            deathText = deathObj.GetComponent<TextMeshProUGUI>();
+        }
+
+        HandlePlayer();
+
+        UpdateUI();
+    }
+
+    void HandlePlayer()
+    {
+        player = FindFirstObjectByType<PlayerController>();
+
+        if (player == null)
+        {
+            if (playerPrefab != null && respawnPoint != null)
+            {
+                GameObject newPlayer = Instantiate(
+                    playerPrefab,
+                    respawnPoint.position,
+                    Quaternion.identity
+                );
+
+                player = newPlayer.GetComponent<PlayerController>();
+            }
+        }
+        else
+        {
+            if (respawnPoint != null)
+            {
+                player.transform.position = respawnPoint.position;
+
+                if (player.rb != null)
+                {
+                    player.rb.linearVelocity = Vector2.zero;
+                }
+            }
+        }
+
+        CameraController cam =
+            Object.FindFirstObjectByType<CameraController>();
+
+        if (cam != null && player != null)
+        {
+            cam.SetTarget(player);
         }
     }
-    public void RestartScene()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
+
     void Update()
     {
+        timeElapsed += Time.deltaTime;
+
+        UpdateUI();
+
         if (Input.GetKeyDown(KeyCode.R))
         {
             RestartLevel();
         }
     }
 
+    void UpdateUI()
+    {
+        if (timerText != null)
+        {
+            // --- CÁLCULO DE TIEMPO CON MILISEGUNDOS ---
+            int min = Mathf.FloorToInt(timeElapsed / 60);
+            int sec = Mathf.FloorToInt(timeElapsed % 60);
+            int fraction = Mathf.FloorToInt((timeElapsed * 100) % 100); // Milisegundos (0-99)
+
+            // Formato: 00:00:00
+            timerText.text = string.Format("{0:00}:{1:00}:{2:00}", min, sec, fraction);
+        }
+
+        if (deathText != null)
+        {
+            deathText.text = "Muertes: " + deathCount;
+        }
+    }
+
+    public void PlayerDied()
+    {
+        deathCount++;
+
+        RespawnPlayer();
+    }
+
+    public void RespawnPlayer()
+    {
+        if (player != null && respawnPoint != null)
+        {
+            player.transform.position = respawnPoint.position;
+
+            if (player.rb != null)
+            {
+                player.rb.linearVelocity = Vector2.zero;
+            }
+
+            if (respawnSound != null)
+            {
+                audioSource.PlayOneShot(respawnSound);
+            }
+        }
+    }
+
     public void RestartLevel()
     {
-        string currentSceneName = SceneManager.GetActiveScene().name;
-        SceneManager.LoadScene(currentSceneName);
+        timeElapsed = 0f;
+        deathCount = 0;
+
+        SceneManager.LoadScene(
+            SceneManager.GetActiveScene().name
+        );
+    }
+
+    public void NextLevel()
+    {
+        if (ServerManager.Instance != null)
+        {
+            ServerManager.Instance.SaveScore(
+                SceneManager.GetActiveScene().buildIndex,
+                timeElapsed,
+                deathCount
+            );
+        }
+
+        int nextIndex =
+            SceneManager.GetActiveScene().buildIndex + 1;
+
+        if (nextIndex < SceneManager.sceneCountInBuildSettings)
+        {
+            timeElapsed = 0f;
+            deathCount = 0;
+
+            SceneManager.LoadScene(nextIndex);
+        }
     }
 }

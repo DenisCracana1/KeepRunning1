@@ -7,6 +7,10 @@ public class LevelManager : MonoBehaviour
     [Header("Configuración del Nivel")]
     public int levelId = 1;
 
+    [Header("Referencias")]
+    public PlayerController player;
+    public Transform spawnPoint;
+
     [Header("Estado Actual")]
     private float timer = 0f;
     private int deathCount = 0;
@@ -22,45 +26,55 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
-        // 1. Localizar el punto de spawn en la escena
         GameObject sp = GameObject.FindWithTag("SpawnPoint");
 
-        if (sp != null && playerPrefab != null)
+        if (sp != null)
         {
-            // 2. INSTANCIAR al jugador
-            GameObject newPlayerObj = Instantiate(playerPrefab, sp.transform.position, Quaternion.identity);
-            PlayerController newPlayerScript = newPlayerObj.GetComponent<PlayerController>();
-
-            // 3. VINCULAR con el GameManager (indispensable para el Respawn)
-            if (GameManager.Instance != null)
-            {
-                GameManager.Instance.player = newPlayerScript;
-                GameManager.Instance.respawnPoint = sp.transform;
-            }
-
-            // 4. VINCULAR con la Cámara (para que deje de estar estática)
-            CameraController camControl = Object.FindFirstObjectByType<CameraController>();
-            if (camControl != null)
-            {
-                camControl.SetTarget(newPlayerScript);
-            }
-
-            Debug.Log(" Todo conectado: Player, Cámara y GameManager.");
-
-            // 5. INICIAR EL NIVEL
-            // Lo llamamos aquí dentro para asegurar que el juego no empiece 
-            // hasta que el jugador ya esté en su sitio.
-            StartLevel();
+            spawnPoint = sp.transform;
+        }
+        else
+        {
+            Debug.LogWarning("No se encontró ningún objeto con el tag SpawnPoint");
+            return;
         }
 
-        StartLevel(); // Tu lógica de la API
+        if (playerPrefab != null)
+        {
+            // CORREGIDO: "Quaternion.identity" en lugar de la palabra rara de antes
+            GameObject newPlayerObj = Instantiate(
+                playerPrefab,
+                spawnPoint.position,
+                Quaternion.identity
+            );
+
+            player = newPlayerObj.GetComponent<PlayerController>();
+
+            if (GameManager.Instance != null)
+            {
+                GameManager.Instance.player = player;
+            }
+
+            CameraController camControl = Object.FindFirstObjectByType<CameraController>();
+
+            if (camControl != null)
+            {
+                camControl.SetTarget(player);
+            }
+
+            Debug.Log("Todo conectado: Player, Cámara y GameManager.");
+            StartLevel();
+        }
+        else
+        {
+            Debug.LogWarning("Player Prefab no asignado en LevelManager");
+        }
     }
 
     void Update()
     {
         if (isLevelActive)
         {
-            timer += Time.deltaTime; // Suma el tiempo real cada segundo
+            timer += Time.deltaTime;
         }
     }
 
@@ -69,23 +83,24 @@ public class LevelManager : MonoBehaviour
         timer = 0f;
         deathCount = 0;
         isLevelActive = true;
-
+        Debug.Log("Nivel iniciado");
     }
 
-    // Llama a esto cada vez que el jugador muera
     public void RegisterDeath()
     {
         deathCount++;
         Debug.Log("Muertes en este nivel: " + deathCount);
+        if (player != null && spawnPoint != null) player.transform.position = spawnPoint.position;
     }
 
-    // Llama a esto cuando el jugador toque la Meta (Trigger)
     public void FinishLevel()
     {
         isLevelActive = false;
         Debug.Log("¡Nivel completado! Tiempo: " + timer + "s | Muertes: " + deathCount);
 
-        // Enviamos los datos al ServerManager (que ya sabe quién es el usuario)
-        ServerManager.Instance.SaveScore(levelId, timer, deathCount);
+        if (ServerManager.Instance != null)
+        {
+            ServerManager.Instance.SaveScore(levelId, timer, deathCount);
+        }
     }
 }

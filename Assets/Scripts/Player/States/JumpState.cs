@@ -20,6 +20,7 @@ public class JumpState : PlayerState
 
     public override void LogicUpdate()
     {
+        // 1. Prioritat absoluta: Si toquem terra, anem a Idle o Run
         if (player.isGrounded)
         {
             if (Mathf.Abs(player.rb.linearVelocity.x) > 0.1f)
@@ -29,19 +30,17 @@ public class JumpState : PlayerState
             return;
         }
 
-        var info = player.anim.GetCurrentAnimatorStateInfo(0);
-        if (info.normalizedTime < 1f)
-            return;
-
-        if (player.rb.linearVelocity.y < 0)
-        {
-            stateMachine.ChangeState(player.fallState);
-            return;
-        }
-
+        // 2. Dash: Ara es pot fer encara que l'animació de salt no hagi acabat
         if (Input.GetKeyDown(KeyCode.LeftShift) && player.dashesLeft > 0)
         {
             stateMachine.ChangeState(player.dashState);
+            return;
+        }
+
+        // 3. Transició a caiguda: Quan la velocitat vertical sigui negativa
+        if (player.rb.linearVelocity.y < 0)
+        {
+            stateMachine.ChangeState(player.fallState);
             return;
         }
     }

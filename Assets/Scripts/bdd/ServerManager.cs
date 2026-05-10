@@ -1,47 +1,48 @@
 using UnityEngine;
 using UnityEngine.Networking;
 using System.Collections;
-using System.Collections.Generic;
 using System.Text;
+using System.Collections.Generic;
 
 public class ServerManager : MonoBehaviour
 {
     public static ServerManager Instance;
 
-    [Header("Configuracion del Servidor")]
-    [Tooltip("URL de la API. Cambiar localhost por la IP del servidor cuando este en la nube.")]
-    [SerializeField] private string urlBase = "https://localhost:5001/api/";
+    [Header("Configuració")]
+    [SerializeField] private string urlBase = "http://keeprunning.somee.com/api/";
 
-    [Header("Datos de Sesion Actual")]
-    public LoginResponse LocalUser; // Aquí guardamos TODO el paquete que recibimos
+    [Header("Sessió")]
+    public LoginResponse LocalUser;
 
     void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-            LoadSession(); // Intentamos recuperar sesión anterior
-        }
+        if (Instance == null) { Instance = this; DontDestroyOnLoad(gameObject); LoadSession(); }
         else { Destroy(gameObject); }
     }
 
-    // --- MÉTODOS DE LA API ---
+    // --- MÈTODES PÚBLICS ---
 
     public void Login(string user, string pass, System.Action<bool> onResult)
     {
         UserAuth auth = new UserAuth { username = user, password = pass };
-        StartCoroutine(PostRequest("users/login", JsonUtility.ToJson(auth), (json) => {
+        StartCoroutine(PostRequest("Users/login", JsonUtility.ToJson(auth), (json) => {
             LocalUser = JsonUtility.FromJson<LoginResponse>(json);
-            SaveSession(json); // Guardamos en el PC para no tener que loguear siempre
+            SaveSession(json);
             onResult?.Invoke(true);
-        }));
+        }, (err) => onResult?.Invoke(false)));
+    }
+
+    public void Register(string user, string pass, System.Action<bool> onResult)
+    {
+        UserAuth auth = new UserAuth { username = user, password = pass };
+        StartCoroutine(PostRequest("Users/register", JsonUtility.ToJson(auth), (json) => {
+            onResult?.Invoke(true);
+        }, (err) => onResult?.Invoke(false)));
     }
 
     public void SaveScore(int levelId, float time, int deaths)
     {
         if (LocalUser == null) return;
-
         LevelResult result = new LevelResult
         {
             userId = LocalUser.id,
@@ -49,35 +50,16 @@ public class ServerManager : MonoBehaviour
             timeSpent = time,
             deaths = deaths
         };
-
-        StartCoroutine(PostRequest("users/save-score", JsonUtility.ToJson(result), (res) => {
-            Debug.Log("Datos sincronizados con la nube correctamente.");
-        }));
+        // Segons el teu Swagger (imatge image_ceba13.png), la ruta és stats/save
+        StartCoroutine(PostRequest("stats/save", JsonUtility.ToJson(result), null, null));
     }
 
-    // --- UTILIDADES DE PERSISTENCIA LOCAL ---
+    // --- MOTOR HTTP ---
 
-    private void SaveSession(string json)
+    IEnumerator PostRequest(string endpoint, string json, System.Action<string> success, System.Action<string> error)
     {
-        PlayerPrefs.SetString("UserSession", json);
-        PlayerPrefs.Save();
-    }
-
-    private void LoadSession()
-    {
-        if (PlayerPrefs.HasKey("UserSession"))
-        {
-            string json = PlayerPrefs.GetString("UserSession");
-            LocalUser = JsonUtility.FromJson<LoginResponse>(json);
-            Debug.Log("Sesion recuperada: " + LocalUser.username);
-        }
-    }
-
-    // --- MOTOR DE PETICIONES HTTP ---
-
-    IEnumerator PostRequest(string endpoint, string json, System.Action<string> successCallback)
-    {
-        using (UnityWebRequest request = new UnityWebRequest(urlBase + endpoint, "POST"))
+        string fullUrl = urlBase + endpoint;
+        using (UnityWebRequest request = new UnityWebRequest(fullUrl, "POST"))
         {
             byte[] bodyRaw = Encoding.UTF8.GetBytes(json);
             request.uploadHandler = new UploadHandlerRaw(bodyRaw);
@@ -88,12 +70,21 @@ public class ServerManager : MonoBehaviour
 
             if (request.result == UnityWebRequest.Result.Success)
             {
-                successCallback?.Invoke(request.downloadHandler.text);
+                Debug.Log("OK: " + endpoint);
+                success?.Invoke(request.downloadHandler.text);
             }
             else
             {
-                Debug.LogError("Error de Red: " + request.error);
+                Debug.LogError("ERROR a " + fullUrl + ": " + request.error);
+                error?.Invoke(request.error);
             }
         }
+    }
+
+    private void SaveSession(string json) { PlayerPrefs.SetString("UserSession", json); PlayerPrefs.Save(); }
+    private void LoadSession()
+    {
+        if (PlayerPrefs.HasKey("UserSession"))
+            LocalUser = JsonUtility.FromJson<LoginResponse>(PlayerPrefs.GetString("UserSession"));
     }
 }

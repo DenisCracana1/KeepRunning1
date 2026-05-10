@@ -3,72 +3,80 @@
   "WorkspaceRootPath": "C:\\Unity\\Proves KeepRunning\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|c:\\unity\\proves keeprunning\\assets\\scripts\\core\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|c:\\unity\\proves keeprunning\\assets\\scripts\\world\\finishline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\world\\finishline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|C:\\Unity\\Proves KeepRunning\\assets\\scripts\\core\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|C:\\Unity\\Proves KeepRunning\\assets\\scripts\\core\\parallaxmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\parallaxmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|C:\\Unity\\Proves KeepRunning\\assets\\scripts\\player\\states\\walljumpstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\states\\walljumpstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\Camera\\ParallaxBackground.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Camera\\ParallaxBackground.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|C:\\Unity\\Proves KeepRunning\\assets\\scripts\\bdd\\models\\levelresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bdd\\models\\levelresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|C:\\Unity\\Proves KeepRunning\\assets\\scripts\\bdd\\models\\userauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bdd\\models\\userauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|C:\\Unity\\Proves KeepRunning\\assets\\scripts\\player\\states\\idlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\states\\idlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|C:\\Unity\\Proves KeepRunning\\assets\\scripts\\bdd\\servermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bdd\\servermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|C:\\Unity\\Proves KeepRunning\\assets\\scripts\\bdd\\models\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bdd\\models\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|C:\\Unity\\Proves KeepRunning\\assets\\scripts\\world\\platform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\world\\platform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|C:\\Unity\\Proves KeepRunning\\assets\\scripts\\player\\states\\crouchstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\states\\crouchstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|C:\\Unity\\Proves KeepRunning\\assets\\scripts\\camera\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camera\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|C:\\Unity\\Proves KeepRunning\\assets\\scripts\\core\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|C:\\Unity\\Proves KeepRunning\\assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|C:\\Unity\\Proves KeepRunning\\assets\\scripts\\player\\playerstatefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerstatefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|C:\\Unity\\Proves KeepRunning\\assets\\scripts\\player\\playerstatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerstatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|c:\\unity\\proves keeprunning\\assets\\scripts\\core\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|C:\\Unity\\Proves KeepRunning\\assets\\scripts\\bdd\\models\\levelresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bdd\\models\\levelresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|C:\\Unity\\Proves KeepRunning\\assets\\scripts\\world\\deadzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\world\\deadzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|C:\\Unity\\Proves KeepRunning\\assets\\scripts\\core\\soundmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\soundmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|C:\\Unity\\Proves KeepRunning\\assets\\scripts\\bdd\\models\\userauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bdd\\models\\userauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|C:\\Unity\\Proves KeepRunning\\assets\\scripts\\bdd\\models\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bdd\\models\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|C:\\Unity\\Proves KeepRunning\\assets\\scripts\\ui\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|C:\\Unity\\Proves KeepRunning\\assets\\scripts\\ui\\authuihandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\authuihandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|C:\\Unity\\Proves KeepRunning\\assets\\scripts\\core\\parallaxmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\parallaxmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|C:\\Unity\\Proves KeepRunning\\assets\\scripts\\camera\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camera\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|C:\\Unity\\Proves KeepRunning\\assets\\scripts\\ui\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|C:\\Unity\\Proves KeepRunning\\assets\\scripts\\world\\platform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\world\\platform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|C:\\Unity\\Proves KeepRunning\\assets\\scripts\\world\\finishline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\world\\finishline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|C:\\Unity\\Proves KeepRunning\\assets\\scripts\\world\\deathzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\world\\deathzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|C:\\Unity\\Proves KeepRunning\\assets\\scripts\\player\\playerstatefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerstatefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|C:\\Unity\\Proves KeepRunning\\assets\\scripts\\player\\states\\playerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -79,20 +87,36 @@
       "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\states\\climbstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|C:\\Unity\\Proves KeepRunning\\assets\\scripts\\player\\states\\dashstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\states\\dashstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|C:\\Unity\\Proves KeepRunning\\assets\\scripts\\player\\states\\runstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\states\\runstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|C:\\Unity\\Proves KeepRunning\\assets\\scripts\\player\\states\\fallstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\states\\fallstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|C:\\Unity\\Proves KeepRunning\\assets\\scripts\\player\\states\\dashstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\states\\dashstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|C:\\Unity\\Proves KeepRunning\\assets\\scripts\\player\\states\\jumpstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\states\\jumpstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|C:\\Unity\\Proves KeepRunning\\assets\\scripts\\player\\states\\runstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\states\\runstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|C:\\Unity\\Proves KeepRunning\\assets\\scripts\\player\\states\\crouchstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\states\\crouchstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|C:\\Unity\\Proves KeepRunning\\assets\\scripts\\player\\states\\walljumpstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\states\\walljumpstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|C:\\Unity\\Proves KeepRunning\\assets\\scripts\\player\\states\\fallstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\states\\fallstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\Camera\\ParallaxBackground.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Camera\\ParallaxBackground.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|C:\\Unity\\Proves KeepRunning\\assets\\scripts\\player\\states\\idlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\states\\idlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{840CAC77-DE18-47CE-402E-A2F5FA90E921}|Assembly-CSharp.csproj|C:\\Unity\\Proves KeepRunning\\assets\\scripts\\player\\states\\wallslidestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -118,7 +142,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 20,
           "Children": [
             {
               "$type": "Bookmark",
@@ -138,20 +162,91 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
+              "Title": "SoundManager.cs",
+              "DocumentMoniker": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\Core\\SoundManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\SoundManager.cs",
+              "ToolTip": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\Core\\SoundManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Core\\SoundManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-09T22:13:44.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MainMenu.cs",
+              "DocumentMoniker": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\UI\\MainMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\MainMenu.cs",
+              "ToolTip": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\UI\\MainMenu.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\MainMenu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-09T13:06:56.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AuthUIHandler.cs",
+              "DocumentMoniker": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\UI\\AuthUIHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\AuthUIHandler.cs",
+              "ToolTip": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\UI\\AuthUIHandler.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\AuthUIHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-09T10:58:34.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UIManager.cs",
+              "DocumentMoniker": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\UI\\UIManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\UIManager.cs",
+              "ToolTip": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\UI\\UIManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\UIManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T15:53:29.359Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DeadZone.cs",
+              "DocumentMoniker": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\World\\DeadZone.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\World\\DeadZone.cs",
+              "ToolTip": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\World\\DeadZone.cs",
+              "RelativeToolTip": "Assets\\Scripts\\World\\DeadZone.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T13:46:51.756Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DeathZone.cs",
+              "DocumentMoniker": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\World\\DeathZone.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\World\\DeathZone.cs",
+              "ToolTip": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\World\\DeathZone.cs",
+              "RelativeToolTip": "Assets\\Scripts\\World\\DeathZone.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T14:16:17.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "FinishLine.cs",
               "DocumentMoniker": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\World\\FinishLine.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\World\\FinishLine.cs",
               "ToolTip": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\World\\FinishLine.cs",
               "RelativeToolTip": "Assets\\Scripts\\World\\FinishLine.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T13:25:20.939Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-16T13:25:20.939Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "LoginResponse.cs",
               "DocumentMoniker": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\bdd\\Models\\LoginResponse.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\bdd\\Models\\LoginResponse.cs",
@@ -163,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "LevelResult.cs",
               "DocumentMoniker": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\bdd\\Models\\LevelResult.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\bdd\\Models\\LevelResult.cs",
@@ -175,7 +270,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "UserAuth.cs",
               "DocumentMoniker": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\bdd\\Models\\UserAuth.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\bdd\\Models\\UserAuth.cs",
@@ -187,20 +282,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
               "Title": "ParallaxManager.cs",
               "DocumentMoniker": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\Core\\ParallaxManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\ParallaxManager.cs",
               "ToolTip": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\Core\\ParallaxManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Core\\ParallaxManager.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAiwCYAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAUwDcAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T18:26:37.247Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-24T18:26:37.247Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 27,
               "Title": "ParallaxBackground.cs",
               "DocumentMoniker": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\Camera\\ParallaxBackground.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Camera\\ParallaxBackground.cs",
@@ -211,7 +305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 30,
               "Title": "LeaderBoardUi.cs",
               "DocumentMoniker": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\UI\\LeaderBoardUi.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\LeaderBoardUi.cs",
@@ -219,12 +313,11 @@
               "RelativeToolTip": "Assets\\Scripts\\UI\\LeaderBoardUi.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T17:43:23.935Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-24T17:43:23.935Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 31,
               "Title": "RegisterUI.cs",
               "DocumentMoniker": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\UI\\RegisterUI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\RegisterUI.cs",
@@ -232,12 +325,11 @@
               "RelativeToolTip": "Assets\\Scripts\\UI\\RegisterUI.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T17:42:49.279Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-24T17:42:49.279Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 32,
               "Title": "LoginUI.cs",
               "DocumentMoniker": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\UI\\LoginUI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\LoginUI.cs",
@@ -245,37 +337,37 @@
               "RelativeToolTip": "Assets\\Scripts\\UI\\LoginUI.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T17:41:20.838Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-24T17:41:20.838Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "LevelManager.cs",
               "DocumentMoniker": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\Core\\LevelManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\LevelManager.cs",
               "ToolTip": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\Core\\LevelManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Core\\LevelManager.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAkwEcAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAwFkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-24T16:23:38.751Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "ServerManager.cs",
               "DocumentMoniker": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\bdd\\ServerManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\bdd\\ServerManager.cs",
               "ToolTip": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\bdd\\ServerManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\bdd\\ServerManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAAPMAAAAAAAAAAAAAAAUBAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T16:06:57.614Z"
+              "WhenOpened": "2026-03-24T16:06:57.614Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 29,
               "Title": "WallSlideState.cs",
               "DocumentMoniker": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\Player\\States\\WallSlideState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\States\\WallSlideState.cs",
@@ -287,7 +379,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 25,
               "Title": "WallJumpState.cs",
               "DocumentMoniker": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\Player\\States\\WallJumpState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\States\\WallJumpState.cs",
@@ -299,79 +391,79 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 21,
               "Title": "RunState.cs",
               "DocumentMoniker": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\Player\\States\\RunState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\States\\RunState.cs",
               "ToolTip": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\Player\\States\\RunState.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\States\\RunState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-04T15:01:22.978Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "JumpState.cs",
               "DocumentMoniker": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\Player\\States\\JumpState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\States\\JumpState.cs",
               "ToolTip": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\Player\\States\\JumpState.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\States\\JumpState.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAmwCkAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAwDUAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-04T15:01:01.667Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 26,
               "Title": "FallState.cs",
               "DocumentMoniker": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\Player\\States\\FallState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\States\\FallState.cs",
               "ToolTip": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\Player\\States\\FallState.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\States\\FallState.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAiwBcAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA3wAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-04T15:00:52.326Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "DashState.cs",
               "DocumentMoniker": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\Player\\States\\DashState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\States\\DashState.cs",
               "ToolTip": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\Player\\States\\DashState.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\States\\DashState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwAUAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-04T15:00:42.968Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 24,
               "Title": "CrouchState.cs",
               "DocumentMoniker": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\Player\\States\\CrouchState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\States\\CrouchState.cs",
               "ToolTip": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\Player\\States\\CrouchState.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\States\\CrouchState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-04T15:00:32.125Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "ClimbState.cs",
               "DocumentMoniker": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\Player\\States\\ClimbState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\States\\ClimbState.cs",
               "ToolTip": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\Player\\States\\ClimbState.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\States\\ClimbState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAkwDsAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-04T15:00:17.71Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 28,
               "Title": "IdleState.cs",
               "DocumentMoniker": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\Player\\States\\IdleState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\States\\IdleState.cs",
@@ -383,19 +475,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "PlayerState.cs",
               "DocumentMoniker": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\Player\\States\\PlayerState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\States\\PlayerState.cs",
               "ToolTip": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\Player\\States\\PlayerState.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\States\\PlayerState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-03T18:57:59.257Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 3,
               "Title": "PlayerStateMachine.cs",
               "DocumentMoniker": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\Player\\PlayerStateMachine.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerStateMachine.cs",
@@ -403,53 +495,55 @@
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerStateMachine.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T18:51:02.832Z"
+              "WhenOpened": "2026-02-03T18:51:02.832Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "PlayerStateFactory.cs",
               "DocumentMoniker": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\Player\\PlayerStateFactory.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerStateFactory.cs",
               "ToolTip": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\Player\\PlayerStateFactory.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerStateFactory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-03T18:27:04.069Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 2,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\Player\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerController.cs",
               "ToolTip": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\Player\\PlayerController.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerController.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAAwFkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAmwLoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T18:07:55.274Z"
+              "WhenOpened": "2026-02-03T18:07:55.274Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "Platform.cs",
               "DocumentMoniker": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\World\\Platform.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\World\\Platform.cs",
               "ToolTip": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\World\\Platform.cs",
               "RelativeToolTip": "Assets\\Scripts\\World\\Platform.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-27T18:00:38.525Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\Core\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\GameManager.cs",
               "ToolTip": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\Core\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Core\\GameManager.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAxwEcAAABgAAAAAAAAAA==",
+              "ViewState": "AgIAAMUAAAAAAAAAAAA+wMoAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-27T17:59:23.155Z",
               "EditorCaption": ""
@@ -462,7 +556,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Camera\\CameraController.cs",
               "ToolTip": "C:\\Unity\\Proves KeepRunning\\Assets\\Scripts\\Camera\\CameraController.cs",
               "RelativeToolTip": "Assets\\Scripts\\Camera\\CameraController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAwCkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-27T17:59:06.344Z"
             }
